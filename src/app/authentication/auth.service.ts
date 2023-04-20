@@ -5,7 +5,7 @@ import { Router } from '@angular/router';
 import { PageVisitTrackerService } from '../page-visit-tracker.service';
 
 let users = [
-  new user('admin@localhost', 'admin@12345678'),
+  new user('admin1@localhost', 'admin1@12345678'),
   new user('user1@localhost', 'user1@12345678'),
   new user('user2@localhost', 'user2@12345678'),
 ];
@@ -32,7 +32,7 @@ export class AuthService {
  
 
   isSuperAdmin() {
-    if (localStorage.getItem('user') === 'admin@localhost') {
+    if (localStorage.getItem('user') === 'admin1@localhost') {
       return true;
     } else {
       return false;
